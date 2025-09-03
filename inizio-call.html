@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Inizio Call - Onboarding Commerciali</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Inizio Call</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="allineamento.html">Allineamento</a>
+        <a href="operativo.html">Operativo</a>
+        <a href="inizio-call.html">Inizio Call</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+    </header>
+    <div class="container">
+      <h2>Fase di Affiancamento e Chiamate Reali</h2>
+      <p>
+        Dopo aver completato le fasi di allineamento e operative, sei pronto a
+        metterti alla prova nelle chiamate reali. In questa sezione lavorerai
+        fianco a fianco con il tuo responsabile per acquisire fiducia e
+        perfezionare la tua tecnica.
+      </p>
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <ul class="task-list">
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-1" />
+          <label for="c-task-1">
+            Affiancamento/ascolto attivo di una Call di Qualifica con il tuo
+            responsabile. Prendi nota delle tecniche e delle obiezioni.
+          </label>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-2" />
+          <label for="c-task-2">
+            Partecipa a un primo <strong>Disco</strong> in cui il
+            responsabile conduce la chiamata e tu osservi; alla fine fate un
+            debriefing sui punti principali.
+          </label>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-3" />
+          <label for="c-task-3">
+            Partecipa a un secondo <strong>Disco</strong> osservando il
+            responsabile e confronta le differenze rispetto al primo.
+          </label>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-4" />
+          <label for="c-task-4">
+            Conduci tu la terza chiamata di <strong>Disco</strong> mentre il
+            responsabile ascolta. Al termine ricevi un feedback dettagliato.
+          </label>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-5" />
+          <label for="c-task-5">
+            Conduci la quarta chiamata di <strong>Disco</strong> con il
+            responsabile in ascolto. Confronta i progressi rispetto alla terza
+            e annota i miglioramenti.
+          </label>
+        </li>
+        <li class="task-item">
+          <input type="checkbox" class="task-checkbox" id="c-task-6" />
+          <label for="c-task-6">
+            Rivedi tutti i video e gli elaborati non completati durante le
+            prime settimane di onboarding. Fai un riepilogo dei concetti
+            principali e chiarisci eventuali dubbi col tuo responsabile.
+          </label>
+        </li>
+      </ul>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+        initTasks('inizio-call');
+      });
+    </script>
+  </body>
+</html>

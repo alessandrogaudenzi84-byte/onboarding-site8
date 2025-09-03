@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="it">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz - Onboarding Commerciali</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Quiz di Autovalutazione</h1>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="allineamento.html">Allineamento</a>
+        <a href="operativo.html">Operativo</a>
+        <a href="inizio-call.html">Inizio Call</a>
+        <a href="quiz.html">Quiz</a>
+      </nav>
+    </header>
+    <div class="container quiz-container">
+      <h2>Verifica le tue conoscenze</h2>
+      <p>
+        Rispondi alle domande qui sotto per verificare quanto hai assimilato
+        durante le fasi di onboarding. Le risposte non verranno valutate da
+        nessuno: servono a te per riflettere sui concetti appresi.
+      </p>
+      <div class="quiz-question">
+        <label for="quiz-1">
+          1. Allineamento: quali sono i principi di Investitore Efficace?
+        </label>
+        <input
+          type="text"
+          id="quiz-1"
+          class="quiz-answer"
+          placeholder="Scrivi la tua risposta qui"
+        />
+      </div>
+      <div class="quiz-question">
+        <label for="quiz-2">
+          2. Operativo: quanti e quali sono gli step della piramide della
+          vendita?
+        </label>
+        <input
+          type="text"
+          id="quiz-2"
+          class="quiz-answer"
+          placeholder="Scrivi la tua risposta qui"
+        />
+      </div>
+      <button type="button" onclick="saveQuizResponses('quiz')">
+        Salva risposte
+      </button>
+    </div>
+    <script src="js/script.js"></script>
+    <script>
+      // Prefill answers if previously saved
+      document.addEventListener('DOMContentLoaded', function () {
+        const inputs = document.querySelectorAll('.quiz-answer');
+        inputs.forEach((input, index) => {
+          const stored = localStorage.getItem(`quiz-answer-${index}`);
+          if (stored) {
+            input.value = stored;
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
